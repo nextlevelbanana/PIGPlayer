@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap" rel="stylesheet"> 
+        <style>
+            body {
+                background-color: hotpink;
+                margin: .5rem;
+                background-image: url("assets/cubepig.png");
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding-left: 7rem;
+                overflow-y:hidden;
+                font-family: "RocknRoll One", "Noto Sans", sans-serif;
+            }
+
+            .song {
+                font-size: 1.75rem;
+                display: inline-block;
+                max-height: 2.5rem;
+                overflow: hidden;
+                position: relative;
+                width: 100%;
+            }
+
+            .scroll {
+                max-height: 2.5rem;
+                overflow: hidden;
+                position: relative;
+                min-width: max-content;
+                /* Starting position */
+                -moz-transform:translateX(100%);
+                -webkit-transform:translateX(100%);  
+                transform:translateX(100%);
+                /* Apply animation to this element */  
+                -moz-animation: song 15s linear infinite;
+                -webkit-animation: song 15s linear infinite;
+                animation: song 15s linear infinite;
+            }
+
+            /* Move it (define the animation) */
+            @-moz-keyframes song {
+                0%   { -moz-transform: translateX(100%); }
+                100% { -moz-transform: translateX(-100%); }
+            }
+            @-webkit-keyframes song {
+                0%   { -webkit-transform: translateX(100%); }
+                100% { -webkit-transform: translateX(-100%); }
+            }
+            @keyframes song {
+                0%   { 
+                    -moz-transform: translateX(100%); /* Firefox bug fix */
+                    -webkit-transform: translateX(100%); /* Firefox bug fix */
+                    transform: translateX(100%);     
+                }
+                100% { 
+                    -moz-transform: translateX(-100%); /* Firefox bug fix */
+                    -webkit-transform: translateX(-100%); /* Firefox bug fix */
+                    transform: translateX(-100%); 
+                }
+            }
+
+            .nowplaying, .link {
+                font-family: 'Noto Sans', sans-serif;
+            }
+        </style>
+        <title>PIGPlayer</title>
+    </head>
+    <body>
+        <div class="nowplaying">Now Playing</div>
+        <div class="song">
+            <div class="scroll">
+                <span id="artist">(change song)</span><span>&nbsp;-&nbsp;</span><span id="title">(to get song info)</span>
+            </div>
+        </div>
+        <div class="link">https://soundcloud.com/pigsquad/sets/</div>
+
+        <script type="text/javascript" src="popup.js"></script>
+    </body>
+</html>

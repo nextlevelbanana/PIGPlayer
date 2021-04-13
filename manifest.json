@@ -1,0 +1,26 @@
+{
+
+    "manifest_version": 2,
+    "name": "Borderify",
+    "version": "1.0",
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "48": "icons/song.svg"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.soundcloud.com/pigsquad/*"],
+        "js": ["listener.js"]
+      }
+    ],
+      "browser_action": {
+        "default_icon": "icons/song.svg",
+        "default_popup": "./launcher.html" 
+      },
+      "web_accessible_resources": [
+        "popup.html",
+        "assets/cubepig.png"
+      ]
+  }
