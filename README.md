@@ -9,7 +9,9 @@ PIGPlayer is a browser extension that gives you a handy little "Now Playing" win
 ## How to Use
 
 ### Firefox + OBS
-1. Install the add-on. (Instructions coming shortly)
+1. Install the add-on:
+    a. [Download it here](https://github.com/nextlevelbanana/PIGPlayer/raw/main/pigplayer-1.0.1-fx.xpi), choose Save File.
+    b. Click on the downloaded file, choose to open it with Firefox. Firefox will ask `Add PIGPlayer`? Click Add.
 2. Go to [https://soundcloud.com/pigsquad/sets/](https://soundcloud.com/pigsquad/sets/) and pick a playlist.
 3. Click the extension's icon in the upper right of the browser toolbar. (It looks like assets/song.svg.)
 4. Click the button that says `Launch PigPlayer!`. (This will attempt to open a popup; you might have to click "allow popup" in the browser somewhere.)
