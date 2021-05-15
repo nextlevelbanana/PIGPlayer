@@ -11,7 +11,7 @@ PIGPlayer is a browser extension that gives you a handy little "Now Playing" win
 ## How to Use
 
 ### Firefox + OBS
-![The PIGPlayer popup window as a window in OBS](README/PIGPlayer3.png) 
+![The PIGPlayer popup window as a window in OBS](README/PIGplayer3.png) 
 
 1. Install the add-on:
     a. [Download it here](https://github.com/nextlevelbanana/PIGPlayer/raw/main/pigplayer-1.0.1-fx.xpi), choose Save File.
